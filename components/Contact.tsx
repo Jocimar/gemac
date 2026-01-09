@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Mail, Phone, MessageCircle } from 'lucide-react';
 
@@ -5,12 +6,14 @@ const Contact: React.FC = () => {
   const contacts = [
     {
       name: "Wendel Azevedo",
+      role: "Diretor Comercial",
       phone: "(67) 99858-8870",
       email: "wendel.gemac@gmail.com",
       whatsapp: "5567998588870"
     },
     {
       name: "Jocimar Moreira",
+      role: "Consultor Comercial",
       phone: "(67) 99827-5445",
       email: "jocimar.gemac@gmail.com",
       whatsapp: "5567998275445"
@@ -35,7 +38,11 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {contacts.map((contact, idx) => (
             <div key={idx} className="bg-white/[0.03] backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:border-white/40 transition-all group">
-              <h4 className="text-3xl font-black mb-8 text-white uppercase tracking-tight">{contact.name}</h4>
+              <div className="mb-8">
+                <h4 className="text-3xl font-black text-white uppercase tracking-tight leading-none">{contact.name}</h4>
+                <p className="text-slate-500 font-bold uppercase tracking-[0.2em] text-[10px] mt-2">{contact.role}</p>
+              </div>
+              
               <div className="space-y-8">
                 <a 
                   href={`tel:${contact.phone.replace(/\D/g,'')}`}

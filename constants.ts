@@ -13,6 +13,7 @@ export const INDUSTRIES_DATA = [
   {
     name: "Indutar",
     url: "https://indutar.com.br/",
+    brandColor: "#E25304", // Cor atualizada conforme solicitado
     location: "Tapera - RS",
     description: "Referência em tecnologia para o campo, especializada em plataformas de colheita e transporte de grãos.",
     products: ["Plataformas de Milho", "Carretas Graneleiras", "Rolos Faca", "Escarificadores"],
@@ -21,14 +22,16 @@ export const INDUSTRIES_DATA = [
   {
     name: "Grazmec",
     url: "https://www.grazmec.com.br/",
+    brandColor: "#3B4043",
     location: "Não-Me-Toque - RS",
-    description: "Líder em tratamento de sementes e logística de plantio com precisão industrial.",
+    description: "Líder em tratamento de sementes e logística de plantio with precisão industrial.",
     products: ["Tratadores de Sementes On-Farm", "Abastecedores de Plantadeiras", "Guinchos Agrícolas"],
     image: "https://images.unsplash.com/photo-1624439783422-383617ff1eba?auto=format&fit=crop&q=80&w=400"
   },
   {
     name: "Rypro",
     url: "https://rypro.com.br/",
+    brandColor: "#1E6C5B", 
     location: "Ibirubá - RS",
     description: "Divisão técnica de componentes industriais de alta resistência e peças para implementos.",
     products: ["Peças de Reposição", "Componentes Hidráulicos", "Sistemas de Transmissão"],
@@ -37,6 +40,7 @@ export const INDUSTRIES_DATA = [
   {
     name: "Rubemaq",
     url: "https://rubemaq.com.br/",
+    brandColor: "#03A0E6",
     location: "Ibirubá - RS",
     description: "Indústria focada em soluções robustas para mecanização agrícola e processos industriais.",
     products: ["Máquinas Especiais", "Implementos de Solo", "Projetos Sob Demanda"],
@@ -45,6 +49,7 @@ export const INDUSTRIES_DATA = [
   {
     name: "Roster",
     url: "https://www.rosterbrasil.ind.br/produtos/1/agropecuaria/",
+    brandColor: "#9B1117",
     location: "Santa Rosa - RS",
     description: "Excelência em equipamentos para pecuária e sistemas de armazenagem de grãos.",
     products: ["Silos Horizontais", "Misturadores de Ração", "Sistemas de Pesagem"],
@@ -53,6 +58,7 @@ export const INDUSTRIES_DATA = [
   {
     name: "Rodoplant",
     url: "https://www.rodoplant.com/",
+    brandColor: "#FF8B00",
     location: "Marau - RS",
     description: "Especialista em transporte e logística industrial com implementos rodoviários de alta performance.",
     products: ["Semirreboques", "Carrocerias Metálicas", "Projetos de Logística"],

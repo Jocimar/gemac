@@ -1,3 +1,4 @@
+
 import { GoogleGenAI } from "@google/genai";
 
 const SYSTEM_INSTRUCTION = `
@@ -11,8 +12,8 @@ Contexto Corporativo:
 - Marcas Representadas: Indutar, Grazmec, Rypro (by Rubemaq), Rubemaq, Roster e Rodoplant.
 
 Contatos Oficiais:
-1. Wendel Azevedo: (67) 99858-8870 | wendel.gemac@gmail.com
-2. Jocimar Moreira: (67) 99827-5445 | jocimar.gemac@gmail.com
+1. Wendel Azevedo (Diretor Comercial): (67) 99858-8870 | wendel.gemac@gmail.com
+2. Jocimar Moreira (Consultor Comercial): (67) 99827-5445 | jocimar.gemac@gmail.com
 
 Diretrizes de Atendimento:
 - Tom de voz: Sério, executivo, experiente e prestativo.

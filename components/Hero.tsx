@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -16,15 +17,15 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-4xl animate-fade-in">
-          <h2 className="text-white/50 font-bold tracking-[0.4em] uppercase text-xs md:text-sm mb-6 border-l-2 border-white/30 pl-4">
+          <h2 className="text-white/50 font-bold tracking-[0.2em] md:tracking-[0.4em] uppercase text-[10px] md:text-sm mb-4 md:mb-6 border-l-2 border-white/30 pl-4">
             Soluções para o campo e cidade.
           </h2>
-          <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter uppercase italic">
+          <h1 className="text-[11vw] sm:text-6xl md:text-8xl font-black text-white leading-[0.85] tracking-tighter uppercase">
             GEMAC<br />
-            <span className="text-white/20 not-italic">REPRESENTAÇÕES</span>
+            <span className="text-white/20 not-italic block mt-1 sm:mt-0 whitespace-nowrap">REPRESENTAÇÕES</span>
           </h1>
-          <p className="mt-8 text-lg md:text-2xl text-slate-400 max-w-2xl font-light leading-relaxed">
-            Representante de peças e implementos agrícolas no MS.<br />
+          <p className="mt-6 md:mt-8 text-base md:text-2xl text-slate-400 max-w-2xl font-light leading-relaxed">
+            Representante de peças e implementos agrícolas no MS.<br className="hidden sm:block" />
             Ligando boas indústrias a revendas que fazem o agro acontecer.
           </p>
         </div>
