@@ -1,0 +1,8 @@
+{
+  "name": "Gemac Representações - Landing Page",
+  "description": "Uma landing page profissional e moderna para a Gemac Representações, apresentando seus serviços de representação comercial com um assistente virtual inteligente.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
