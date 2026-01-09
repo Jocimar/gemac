@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CommercialAssistant from './components/CommercialAssistant';
 import { LOGO_URL } from './constants';
 
 const App: React.FC = () => {
@@ -77,7 +76,6 @@ const App: React.FC = () => {
       </main>
 
       <Footer />
-      <CommercialAssistant />
     </div>
   );
 };

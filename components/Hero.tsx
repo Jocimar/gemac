@@ -17,14 +17,15 @@ const Hero: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-4xl animate-fade-in">
           <h2 className="text-white/50 font-bold tracking-[0.4em] uppercase text-xs md:text-sm mb-6 border-l-2 border-white/30 pl-4">
-            Estratégia & Performance • Mato Grosso do Sul
+            Soluções para o campo e cidade.
           </h2>
           <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter uppercase italic">
             GEMAC<br />
             <span className="text-white/20 not-italic">REPRESENTAÇÕES</span>
           </h1>
           <p className="mt-8 text-lg md:text-2xl text-slate-400 max-w-2xl font-light leading-relaxed">
-            Intermediação estratégica de alta performance em implementos e peças. Conectando as melhores indústrias às revendas de todo o Mato Grosso do Sul.
+            Representante de peças e implementos agrícolas no MS.<br />
+            Ligando boas indústrias a revendas que fazem o agro acontecer.
           </p>
         </div>
       </div>

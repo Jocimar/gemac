@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { LOGO_URL } from '../constants';
+import { LOGO_URL, ADMIN_CONTACT } from '../constants';
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -15,6 +15,8 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
     { label: 'Sobre', href: '#sobre' },
     { label: 'Contato', href: '#contato' },
   ];
+
+  const whatsappUrl = `https://wa.me/${ADMIN_CONTACT.whatsapp}?text=${encodeURIComponent(ADMIN_CONTACT.whatsappMsg)}`;
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-4'}`}>
@@ -54,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
               ))}
               <div className="flex items-center ml-4 pl-4 border-l border-slate-300/30">
                 <a
-                  href="https://wa.me/5567998588870"
+                  href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`px-5 py-2.5 rounded-sm text-sm font-bold transition-all shadow-lg ${
@@ -102,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             ))}
             <div className="px-3 py-2">
               <a
-                href="https://wa.me/5567998588870"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center bg-slate-950 text-white px-5 py-3 rounded-sm text-sm font-bold"

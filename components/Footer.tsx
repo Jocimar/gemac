@@ -1,12 +1,12 @@
+
 import React, { useState } from 'react';
-import { Instagram, Facebook, MapPin, X } from 'lucide-react';
-import { LOGO_URL } from '../constants';
+import { Instagram, Facebook, X, Phone } from 'lucide-react';
+import { LOGO_URL, ADMIN_CONTACT } from '../constants';
 
 const Footer: React.FC = () => {
   const currentYear = 2026;
   const instagramUrl = "https://www.instagram.com/gemac.representacoes/";
   const facebookUrl = "https://www.facebook.com/profile.php?id=100091951693685";
-  const adminEmail = "gemac.admi@gmail.com";
   
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         {/* Rodapé com 2 Colunas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
           
-          {/* Coluna da Esquerda: Identidade (Mantém) */}
+          {/* Coluna da Esquerda: Identidade */}
           <div className="flex flex-col items-center md:items-start space-y-6">
             <div className="flex items-center space-x-4">
               <div className="bg-white p-1 rounded-full overflow-hidden w-14 h-14 shadow-lg">
@@ -35,9 +35,7 @@ const Footer: React.FC = () => {
                 </span>
               </div>
             </div>
-            <p className="text-slate-500 text-sm max-w-sm font-light leading-relaxed text-center md:text-left">
-              Estrategistas em representação comercial de implementos e maquinários. Conexão sólida entre indústria e campo no MS.
-            </p>
+            
             <div className="flex space-x-6">
               <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-all" aria-label="Instagram">
                 <Instagram className="w-6 h-6" />
@@ -48,7 +46,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           
-          {/* Coluna da Direita: Contato Administrativo (Estilo solicitado em imagem) */}
+          {/* Coluna da Direita: Contato Administrativo */}
           <div className="flex flex-col items-center text-center">
             <div className="w-full max-w-xs space-y-4">
               <div className="w-full h-[1px] bg-white/10 mb-8"></div>
@@ -57,32 +55,39 @@ const Footer: React.FC = () => {
                 ADMINISTRATIVO
               </h4>
               
-              <a 
-                href={`mailto:${adminEmail}`} 
-                className="block text-xl md:text-2xl font-black text-white hover:text-slate-300 transition-colors tracking-tight"
-              >
-                {adminEmail}
-              </a>
-              
-              <div className="pt-6 flex items-center justify-center space-x-2 text-slate-500 uppercase text-[10px] font-black tracking-[0.2em]">
-                <MapPin className="w-4 h-4" />
-                <span>ATENDIMENTO EM TODO O MS</span>
+              <div className="space-y-4">
+                <a 
+                  href={`https://wa.me/${ADMIN_CONTACT.whatsapp}?text=${encodeURIComponent(ADMIN_CONTACT.whatsappMsg)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center space-x-2 text-xl font-black text-white hover:text-slate-300 transition-colors tracking-tight"
+                >
+                  <Phone className="w-5 h-5 text-slate-500" />
+                  <span>{ADMIN_CONTACT.phone}</span>
+                </a>
+                
+                <a 
+                  href={`mailto:${ADMIN_CONTACT.email}`} 
+                  className="block text-xl md:text-2xl font-black text-white hover:text-slate-300 transition-colors tracking-tight"
+                >
+                  {ADMIN_CONTACT.email}
+                </a>
               </div>
             </div>
           </div>
         </div>
         
-        {/* Barra Inferior Lado a Lado */}
-        <div className="pt-8 border-t border-white/[0.05] flex flex-col md:flex-row justify-between items-center gap-y-4 text-[10px] uppercase font-black tracking-[0.15em] text-slate-600">
+        {/* Barra Inferior Uniformizada */}
+        <div className="pt-8 border-t border-white/[0.05] flex flex-col md:flex-row justify-between items-center gap-y-4 text-[10px] uppercase font-black tracking-[0.15em] text-slate-400">
           <div className="flex flex-col md:flex-row items-center md:space-x-4 text-center md:text-left">
             <span>© {currentYear} Gemac Representações</span>
-            <span className="hidden md:inline opacity-30">|</span>
-            <span className="font-light normal-case opacity-40">Campo Grande / Mato Grosso do Sul</span>
+            <span className="hidden md:inline text-slate-400">|</span>
+            <span className="font-medium normal-case">Campo Grande / Mato Grosso do Sul</span>
           </div>
           
           <button 
             onClick={() => setIsPrivacyOpen(true)}
-            className="hover:text-white transition-colors cursor-pointer"
+            className="hover:text-white transition-colors cursor-pointer uppercase font-black tracking-[0.15em] text-slate-400"
           >
             Política de Privacidade
           </button>
@@ -125,7 +130,7 @@ const Footer: React.FC = () => {
 
               <p className="font-bold text-slate-900 uppercase tracking-widest text-[10px]">Contato</p>
               <p>
-                Dúvidas podem ser encaminhadas para <span className="font-bold">{adminEmail}</span>.
+                Dúvidas podem ser encaminhadas para <span className="font-bold">{ADMIN_CONTACT.email}</span>.
               </p>
             </div>
             <div className="p-4 border-t border-slate-100 bg-slate-50 flex justify-end">
