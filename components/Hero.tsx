@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -27,20 +26,6 @@ const Hero: React.FC = () => {
           <p className="mt-8 text-lg md:text-2xl text-slate-400 max-w-2xl font-light leading-relaxed">
             Intermediação estratégica de alta performance em implementos e peças. Conectando as melhores indústrias às revendas de todo o Mato Grosso do Sul.
           </p>
-          <div className="mt-12 flex flex-col sm:flex-row gap-5">
-            <a
-              href="#contato"
-              className="px-10 py-5 bg-white text-black rounded-sm font-black text-sm hover:bg-slate-200 transition-all text-center uppercase tracking-[0.2em] shadow-2xl"
-            >
-              Consultar Agora
-            </a>
-            <a
-              href="#industrias"
-              className="px-10 py-5 bg-transparent text-white border border-white/20 rounded-sm font-bold text-sm hover:bg-white/10 transition-all text-center uppercase tracking-[0.2em] backdrop-blur-sm"
-            >
-              Portfólio de Marcas
-            </a>
-          </div>
         </div>
       </div>
 
