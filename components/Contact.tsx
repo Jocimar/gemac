@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contato" className="py-24 bg-slate-950 text-white relative overflow-hidden">
+    <section id="contato" className="py-24 bg-slate-950 text-white relative overflow-hidden scroll-mt-20">
       <div className="absolute top-0 left-0 w-full h-2 bg-white"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

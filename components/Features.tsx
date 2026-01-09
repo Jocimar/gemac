@@ -4,9 +4,9 @@ import { INDUSTRIES_DATA } from '../constants';
 
 const Features: React.FC = () => {
   return (
-    <section id="servicos" className="py-24 bg-white">
+    <section id="industrias" className="py-24 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div id="marcas">
+        <div>
           <div className="text-center mb-16">
             <h2 className="text-slate-400 font-bold tracking-[0.4em] uppercase text-xs mb-3">Linha de Frente</h2>
             <p className="text-4xl md:text-5xl font-black text-black uppercase tracking-tighter">Indústrias Representadas</p>

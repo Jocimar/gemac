@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
               Consultar Agora
             </a>
             <a
-              href="#marcas"
+              href="#industrias"
               className="px-10 py-5 bg-transparent text-white border border-white/20 rounded-sm font-bold text-sm hover:bg-white/10 transition-all text-center uppercase tracking-[0.2em] backdrop-blur-sm"
             >
               Portfólio de Marcas

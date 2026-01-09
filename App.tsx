@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <Hero />
         <Features />
         
-        <section id="sobre" className="py-24 bg-white border-y border-slate-100 relative overflow-hidden">
+        <section id="sobre" className="py-24 bg-white border-y border-slate-100 relative overflow-hidden scroll-mt-20">
           {/* Fundo decorativo sutil com a logo oficial */}
           <div className="absolute -left-20 top-1/2 -translate-y-1/2 opacity-[0.05] pointer-events-none grayscale">
             <img src={LOGO_URL} alt="" className="w-96 h-auto rounded-full" />
