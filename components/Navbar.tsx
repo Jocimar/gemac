@@ -24,18 +24,18 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 flex items-center space-x-3">
             {/* Logo Oficial baseada na URL fornecida */}
-            <div className={`transition-all duration-300 p-1 bg-white rounded-full ${isScrolled ? 'scale-90 shadow-sm' : 'scale-110 shadow-xl'}`}>
+            <div className={`transition-all duration-300 p-1 bg-white rounded-full ${isScrolled ? 'scale-90 shadow-sm' : 'scale-105 shadow-xl'}`}>
               <img 
                 src={LOGO_URL} 
                 alt="Gemac Representações" 
-                className="h-12 w-12 object-cover rounded-full"
+                className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full"
               />
             </div>
             <div className="flex flex-col">
-              <span className={`text-xl font-black tracking-tighter uppercase leading-none ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+              <span className={`text-lg md:text-xl font-black tracking-tighter uppercase leading-none ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
                 GEMAC
               </span>
-              <span className={`text-[10px] font-bold tracking-[0.2em] uppercase opacity-60 ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+              <span className={`text-[8px] md:text-[10px] font-bold tracking-[0.2em] uppercase opacity-60 ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
                 REPRESENTAÇÕES
               </span>
             </div>

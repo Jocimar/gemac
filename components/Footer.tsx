@@ -13,12 +13,14 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-950 pt-16 pb-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        
-        {/* Layout Principal: Marca à esquerda, Admin à direita */}
-        <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+        {/* Linha Divisória Superior - Mesma largura do conteúdo */}
+        <div className="w-full h-[1px] bg-white/5 mb-16"></div>
+
+        {/* Layout Principal: Marca e Administrativo */}
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 mb-16">
           
-          {/* LADO ESQUERDO: Marca e Social */}
-          <div className="flex flex-col items-center md:items-start space-y-6">
+          {/* BLOCO MARCA: Centralizado no mobile, à esquerda no desktop */}
+          <div className="flex flex-col items-center md:items-start space-y-6 w-full md:w-auto">
             <div className="flex items-center space-x-4">
               <div className="bg-white p-0.5 rounded-full overflow-hidden w-14 h-14 md:w-16 md:h-16 flex-shrink-0">
                 <img 
@@ -27,17 +29,17 @@ const Footer: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col items-start">
                 <span className="text-xl md:text-2xl font-black tracking-tighter text-white uppercase leading-none">
                   GEMAC
                 </span>
-                <span className="text-[9px] md:text-[10px] font-bold tracking-[0.3em] text-slate-500 uppercase mt-1">
+                <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase mt-1">
                   REPRESENTAÇÕES
                 </span>
               </div>
             </div>
             
-            <div className="flex space-x-6 pl-2">
+            <div className="flex space-x-6 md:pl-2">
               <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-white transition-all transform hover:scale-110" aria-label="Instagram">
                 <Instagram className="w-6 h-6" />
               </a>
@@ -47,17 +49,14 @@ const Footer: React.FC = () => {
             </div>
           </div>
           
-          {/* LADO DIREITO: Administrativo (Conforme Imagem) */}
+          {/* BLOCO ADMINISTRATIVO: Centralizado no mobile, alinhado à direita no desktop */}
           <div className="w-full md:w-auto flex flex-col items-center md:items-end">
-            <div className="w-full md:w-72 flex flex-col items-center md:items-center">
-              {/* Linha Divisória que aparece na imagem */}
-              <div className="w-full h-[1px] bg-white/10 mb-8"></div>
-              
-              <h4 className="text-[10px] font-bold uppercase tracking-[0.5em] text-blue-400/50 mb-6">
+            <div className="w-full max-w-[280px] md:w-72 flex flex-col items-center md:items-end">
+              <h4 className="text-[10px] font-bold uppercase tracking-[0.5em] text-blue-400/50 mb-6 text-center md:text-right">
                 ADMINISTRATIVO
               </h4>
               
-              <div className="flex flex-col items-center space-y-4">
+              <div className="flex flex-col items-center md:items-end space-y-4">
                 <a 
                   href={`https://wa.me/${ADMIN_CONTACT.whatsapp}`}
                   target="_blank"
@@ -70,7 +69,7 @@ const Footer: React.FC = () => {
                 
                 <a 
                   href={`mailto:${ADMIN_CONTACT.email}`} 
-                  className="text-xl md:text-2xl font-black text-white hover:text-blue-400 transition-colors tracking-tighter"
+                  className="text-xl md:text-2xl font-black text-white hover:text-blue-400 transition-colors tracking-tighter text-center md:text-right"
                 >
                   {ADMIN_CONTACT.email}
                 </a>
@@ -80,16 +79,15 @@ const Footer: React.FC = () => {
         </div>
         
         {/* Barra Inferior (Copyright / Privacidade) */}
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-y-4 text-[9px] uppercase font-black tracking-[0.15em] text-slate-600">
-          <div className="flex flex-col md:flex-row items-center md:space-x-4 text-center space-y-1 md:space-y-0">
+        <div className="pt-8 border-t border-white/5 flex flex-col items-center gap-y-4 text-[9px] uppercase font-black tracking-[0.15em] text-slate-600">
+          <div className="flex flex-col items-center text-center space-y-2">
             <span>© {currentYear} Gemac Representações</span>
-            <span className="hidden md:inline opacity-20">|</span>
-            <span className="font-medium normal-case tracking-normal">Campo Grande / Mato Grosso do Sul</span>
+            <span className="font-medium normal-case tracking-normal text-slate-700">Campo Grande / Mato Grosso do Sul</span>
           </div>
           
           <button 
             onClick={() => setIsPrivacyOpen(true)}
-            className="hover:text-white transition-colors cursor-pointer"
+            className="hover:text-white transition-colors cursor-pointer text-center"
           >
             Política de Privacidade
           </button>
