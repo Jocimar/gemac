@@ -1,4 +1,5 @@
 
+// URL da logo oficial da Gemac Representações (Facebook CDN)
 export const LOGO_URL = "https://scontent.ffln5-1.fna.fbcdn.net/v/t39.30808-6/342981325_574217264508440_1168163168130537233_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=5r9ckdmJFJcQ7kNvwHyfVWs&_nc_oc=Adl7WeaKaG3ov2EWZ6fUzt0NR_fc2JCPOiMfMEOcKXjftw0Imz79LYeO87YIjhwG5g9O-J5XKrFWx8k9AGJd_UYv&_nc_zt=23&_nc_ht=scontent.ffln5-1.fna&_nc_gid=mDcfQ-1D2adY4TOaji7rvQ&oh=00_Afo9uHjV-DKdo8p3OB4qxgSvekgJow53dfTYsf4kN5RXaA&oe=69673941";
 
 export const INDUSTRIES_DATA = [
