@@ -28,12 +28,6 @@ const Hero: React.FC = () => {
           </p>
         </div>
       </div>
-
-      {/* Indicador de scroll sutil */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-30 animate-bounce">
-        <span className="text-[10px] uppercase font-bold tracking-widest text-white mb-2">Scroll</span>
-        <div className="w-[1px] h-12 bg-white"></div>
-      </div>
     </section>
   );
 };

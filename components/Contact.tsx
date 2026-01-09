@@ -1,10 +1,7 @@
-
 import React from 'react';
-import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MessageCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
-  const adminEmail = "gemac.admi@gmail.com";
-  
   const contacts = [
     {
       name: "Wendel Azevedo",
@@ -83,20 +80,6 @@ const Contact: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-20 flex flex-col items-center justify-center space-y-6">
-          <div className="pt-8 flex flex-col items-center border-t border-white/10 w-full max-w-xs">
-            <p className="text-[10px] text-slate-500 uppercase font-black tracking-[0.3em] mb-2">Administrativo</p>
-            <a href={`mailto:${adminEmail}`} className="text-lg font-bold hover:text-slate-400 transition-colors">
-              {adminEmail}
-            </a>
-          </div>
-          
-          <div className="flex items-center space-x-2 text-slate-500 py-4 uppercase text-xs font-bold tracking-[0.3em]">
-            <MapPin className="w-4 h-4" />
-            <span>Atendimento em todo o MS</span>
-          </div>
         </div>
       </div>
     </section>
